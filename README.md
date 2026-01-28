@@ -16,11 +16,11 @@ In simple words, when computers are connected with each other — for example,
 
 Examples:
 
-Home Wi-Fi network
+- Home Wi-Fi network
 
-College computer lab network
+- College computer lab network
 
-Office LAN network
+- Office LAN network
 
 ## internet 
 
