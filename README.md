@@ -15,10 +15,13 @@ In simple words, when computers are connected with each other — for example,
 
 it is called a computer network.
 
-Examples:-------
-        -Home Wi-Fi network,
-        -College computer lab network,
-        -Office LAN network,
+Examples:
+
+Home Wi-Fi network
+
+College computer lab network
+
+Office LAN network
 
 ## internet 
 
