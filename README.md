@@ -33,11 +33,12 @@ The Internet is a network of networks.
 It is used to access information and communicate online.
 
 Uses of the Internet:----
- - Browsing websites,
+
+- Browsing websites,
              
-  -Sending emails,
+- Sending emails,
               
- - Online communication (chat, video calls),
+- Online communication (chat, video calls),
              
-  -Online learning, payments, and entertainment.
+- Online learning, payments, and entertainment.
 
