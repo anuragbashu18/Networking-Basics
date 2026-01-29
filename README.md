@@ -3,7 +3,6 @@
 These are my personal notes while learning networking fundamentals
 
 
-
 ## Computer Network
 
 
@@ -22,7 +21,9 @@ Examples:
 
 - Office LAN network
 
+
 ## internet 
+
 
   The Internet is the connection of multiple computer networks across regions, countries, or worldwide.
  
