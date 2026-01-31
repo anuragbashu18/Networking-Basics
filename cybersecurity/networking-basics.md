@@ -211,11 +211,11 @@ Online gaming
 
  ## HTTP (hypertext transfer protocol)
 
-  # it uses a port number- 80( default port)
-  # it is not encrypted
-  # data send as plain text
-  # attack is mostly possible (like MITM ATTACK)
-  # it is rarely used in modern tachnology 
+  * it uses a port number- 80( default port)
+  * it is not encrypted
+  * data send as plain text
+  * attack is mostly possible (like MITM ATTACK)
+  * it is rarely used in modern tachnology 
 
    http is a protocol using this data is transfer between client(browser) and web server 
 
@@ -227,11 +227,11 @@ Online gaming
 
  https is secure protocol for data transfer bw client and server 
 
- # it uses a port number- 443 (default port)
- # it is encypted 
- # data send as encypted form 
- # attack is rarely possible 
- # it is mostly used in modern technology
+ * it uses a port number- 443 (default port)
+ * it is encypted 
+ * data send as encypted form 
+ * attack is rarely possible 
+ * it is mostly used in modern technology
 
 
 
@@ -251,28 +251,79 @@ Online gaming
 
   Multiple routes possible (packet switching)
 
+# who exactly convert big data into packets 
+
+* so it is OS KERNEL in which it have TCP/IP protocol which convert data into chunks 
+
+  # worksflows----
+
+  Application (Browser)
+          ↓
+  OS Kernel (TCP/UDP breaks data)
+          ↓
+  OS Kernel (IP makes packets)
+          ↓
+  Network Interface Card (NIC)
+          ↓
+      Network
 
 
-Jab app data bhejta hai (example: “hello”)
 
-App (WhatsApp / Browser) sirf data banata hai.
+# if i have to message to someone example ------
 
-App data OS kernel ko deta hai.
+  - How a message like “hello” is sent 
 
-TCP:
+  - User types a message like “hello” in an app (WhatsApp / browser).
 
-Data ko chhote parts me todta hai
+  - The application only creates data, it does not create packets.
 
-Order number lagata hai
+  - The Operating System (OS) kernel receives this data.
 
-Check karta hai data sahi pahunch raha ya nahi
+  - The TCP/IP network stack in the OS breaks the data into small pieces.
 
-IP:
+  - These pieces are converted into packets by adding headers.
 
-Data ke upar source IP aur destination IP lagata hai
+  - Packets are sent to the network card (NIC).
 
-Ab data packet ban jaata hai.
+  - Packets travel through the network / internet.
 
-Packet network card (Wi-Fi / mobile data) ko diya jaata hai.
+  - The receiver’s OS kernel collects the packets.
 
-Packet internet par send ho jaata hai.
+  - Packets are reassembled into the original message.
+
+  - The application shows the message “hello” to the user.
+
+
+# exactly how working inside os kernal-----
+
+- Jab app data bhejta hai (example: “hello”)
+
+- App (WhatsApp / Browser) sirf data banata hai.
+
+- App data OS kernel ko deta hai.
+
+- TCP:----
+
+- Data ko chhote parts me todta hai
+
+- Order number lagata hai
+
+- Check karta hai data sahi pahunch raha ya nahi
+
+- IP:-----
+
+- Data ke upar source IP aur destination IP lagata hai
+
+- Ab data packet ban jaata hai.
+
+- Packet network card (Wi-Fi / mobile data) ko diya jaata hai.
+
+- Packet internet par send ho jaata hai.
+
+
+# conclusion---
+
+- OS kernel (TCP/IP stack) converts data into packets.
+
+
+
