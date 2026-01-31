@@ -391,9 +391,9 @@ Online gaming
 
 ## IP ADDRESS AND PORT NUMBER ---
 
-* ip address identify the device , like which device sending the data.
+* ip address identify the device , like which device sending the data and which device receiving the data .
 
-* port number identify the application in that device
+* port number identify the  which application is sending or recieving the data  in that device
 
 
 
