@@ -341,7 +341,7 @@ Online gaming
   - TCP ka kaam:--->>
 
   - Data ko todna (segments)
-
+  
   - Order maintain karna
 
   - Data sahi pahunch raha hai ya nahi check karna
@@ -387,13 +387,85 @@ Online gaming
 
 - OS kernel (TCP/IP stack) converts data into packets.
 
+## example like -- what happens  when I open google.com?
+    
+step 1-- we enter url(https://www.google.com)
+     - browser know or read only 
+         protocol- https
+         domain - google.com
+
+step 2-- DNS resolution ( it is the process of converting domain name into corresponing ip address )
+
+       step1-- browser catch check ( browser apni memory or history check krta h kya maine recently google.com ka ip resolve kiya h if YES, then easily IP mil jata h  ,if, NO , then next step-- )
+
+       step2-- OS catch check ( browser will ask to OS , OS will contain DNS catch , and hosts file if IP found then good else next     step--)
+
+       step3-- OS sends a DNS query to ISP DNS (DNS server provided by your internet service provider || means ISP DNS server checks its DNS catch if ip found then good else next step-- )
+
+       step4-- DNS resolver will ask the authoritative DNS server fir the ip address of google .com
+
+step3-- TCP Connection (3-Way Handshake)
+
+      * Client aur server ke beech reliable connection banta hai:
+
+           - SYN
+
+           - SYN-ACK
+
+           - ACK
+
+step4-- HTTPS / TLS Security
+
+      Browser aur server TLS handshake karte hain
+
+      Encryption keys exchange hoti hain
+
+      Secure encrypted tunnel ban jaata hai ( after that data is encypted)
+
+step5-- HTTPS request ( browser will send https get request to server )     
+
+step6-- data into packets 
+
+step7-- server processing ( google server process-- server receive packets , tcp packets reassemble)
+
+step8-- server response (  like html , css , js images || response bhi data packets me aata hh and also add ip address on those packets)
+
+step9-- browser rendering ( we see the google homepage, html css images all that )      
+
+
+
+
 
 
 ## IP ADDRESS AND PORT NUMBER ---
 
 * ip address identify the device , like which device sending the data and which device receiving the data .
 
-* port number identify the  which application is sending or recieving the data  in that device
+* port number identify the  which application is sending or recieving the data  in that device.
+
+* port number have 16 bits (total no of ports= 2^16 =~ 65000)
+
+* reserved port (0 - 1023) --( used or reserved by standards network services) -- if i want to create a aplication and i want to run in 80 port number we cant do it because its already reserved by http.
+   
+   - ex-- 22- SSH,
+         80- HTTP,
+        443- HTTPS,
+        25- SMTP.
+
+* reserved ports(1024- 49151)-  regestered / used ports by application)
+ 
+    - ex-- 3306- mysql,
+           3389- rdp,
+           8080- http-alt.( http alternative port)
+
+* reserved ports (49152-65535)-- you can use , temporary ports , used by clients ( your browser source port)
+
+* speed of network--
+
+  - 1 mbps (mega bits per seconds)= 1000000 bits/s
+  - 1 gbps (gega bits per seconds)= 10^9 bits/s
+  - 1 kbps (kilo bits per seconds)= 1000 bits/s
+
 
 
 
