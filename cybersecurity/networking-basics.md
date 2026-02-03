@@ -462,7 +462,7 @@ step9-- browser rendering ( we see the google homepage, html css images all that
 
 * reserved ports (49152-65535)-- you can use , temporary ports , used by clients ( your browser source port)
 
-* speed of network--
+* speed of network---
 
   - 1 mbps (mega bits per seconds)= 1000000 bits/s
   - 1 gbps (gega bits per seconds)= 10^9 bits/s
@@ -475,7 +475,7 @@ step9-- browser rendering ( we see the google homepage, html css images all that
 
   * you have a question like why need of cable underwater if satelite is there beacause underwatercable is faster than satelite and more reliable and carry 95%+ of the world's internet traffic.
 
-  # LAN (local area network)------
+  # Lan (local area network)------
   
 
 
