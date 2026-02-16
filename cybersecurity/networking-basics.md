@@ -487,8 +487,23 @@ step9-- browser rendering ( we see the google homepage, html css images all that
 
     * MAN is a network that connects across city like patna
     * intrnet network across patna city 
+    * in MAN = multiple LAN network
 
     ex--- tv cable network across city 
+
+ # wan(wide area network)
+  
+    * wan is network in which access across state / country
+    * speed is comparetively low because of long  distance, many routers , many satelite , heavy traffic 
+
+    ex--INTERNET uses across country ,
+        bank network across country   
+
+  # modem
+      -- MOdulator + DEModulator
+
+      * it is a device which takes internet signal from isp (internet service provider) and convert into digital signal then gives to router
+           
 
   
   
