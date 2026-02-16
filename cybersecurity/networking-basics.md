@@ -481,13 +481,16 @@ step9-- browser rendering ( we see the google homepage, html css images all that
 
   * it is high sped more secure.
 
-    ex-- Laptop
+    ex--   your home wifi connected with home Laptop , mobile, smart tv etc
 
-    Mobile
+ # man(metropolitan area network)
 
-    Smart TV
+    * MAN is a network that connects across city like patna
+    * intrnet network across patna city 
 
-    Wi-Fi router
+    ex--- tv cable network across city 
+
+  
   
 
 
