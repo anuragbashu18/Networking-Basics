@@ -500,9 +500,19 @@ step9-- browser rendering ( we see the google homepage, html css images all that
         bank network across country   
 
   # modem
-      -- MOdulator + DEModulator
+  -- MOdulator + DEModulator
 
-      * it is a device which takes internet signal from isp (internet service provider) and convert into digital signal then gives to router
+  * it is a device which takes internet signal from isp (internet service provider) and convert into digital signal then gives to router
+
+   Ex--- * Airtel/Jio fiber at home(it is a combo of modem and router )
+
+   **   IN past days we are using modem and router seperately like 2 physical devices boxex  but IN  PRESENT DAYS we are using in one single devices like airtel /jio fibre it have inbuilt both modem and routers 
+          
+
+   **   in which modem converts internet signal from ISP to digital signal and then digital signal is  taken by router processed and 
+        provides internet or data to devices like smarthphones, laptop, computers 
+
+           
            
 
   
