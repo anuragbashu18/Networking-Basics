@@ -41,7 +41,7 @@ Online learning, payments, and entertainment.
 
  ## Very Important line
 
- Google uses TCP for reliable services like Search, Gmail, and Drive, while UDP is used for real-time services like YouTube streaming and Google Meet.
+ Google uses TCP for reliable services like Search, Gmail, and Drive, UDP is usewhile d for real-time services like YouTube streaming and Google Meet.
 
  ### When you search on Google 
 
@@ -163,7 +163,7 @@ Google Search = HTTPS → TCP
 ## UDP (USER DATAGRAM PROTOCOL)
 you will not care about data is reaching in its destination or not  whomever you want to send the data 
 
-example like video conferencing not all data ,totally fine bythis 
+example like video conferencing not all data ,totally fine by this
 
 # Use hota hai jab speed > accuracy
 
@@ -499,7 +499,7 @@ step9-- browser rendering ( we see the google homepage, html css images all that
     ex--INTERNET uses across country ,
         bank network across country   
 
-  # modem
+  # modem and router
   -- MOdulator + DEModulator
 
   * it is a device which takes internet signal from isp (internet service provider) and convert into digital signal then gives to router
@@ -509,12 +509,35 @@ step9-- browser rendering ( we see the google homepage, html css images all that
    **   IN past days we are using modem and router seperately like 2 physical devices boxex  but IN  PRESENT DAYS we are using in one single devices like airtel /jio fibre it have inbuilt both modem and routers 
           
 
-   **   in which modem converts internet signal from ISP to digital signal and then digital signal is  taken by router processed and 
-        provides internet or data to devices like smarthphones, laptop, computers 
+  **  Modem and Router working:
 
-           
+   A modem receives the internet signal from the ISP and converts it into digital data.
+    This digital data is then sent to the router.
+    The router distributes this data to different devices and provides internet access to devices like smartphones, laptops, and computers through Wi-Fi or LAN cables.
+
+   **  Router--
+        A router is a networking device that takes internet from the modem and distributes it to multiple devices like phones, laptops, and computers.
            
 
+  ## TOPOLOGIES
+
+  * bus--
+     
+     bus topology means computers are connected with one cable if it broke all computer will dosconnect and not working and only one persons can sends data at a time 
+
+  * ring--
+     
+  * star--
+
+  * tree--bus and star combination
+
+  * mesh--
+
+
+  ## structure of network
+
+  * OSI model --
+  
   
   
 
