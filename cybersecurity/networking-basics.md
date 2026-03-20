@@ -523,26 +523,173 @@ step9-- browser rendering ( we see the google homepage, html css images all that
 
   * bus--
      
-     bus topology means computers are connected with one cable if it broke all computer will dosconnect and not working and only one persons can sends data at a time 
+  - bus topology means computers are connected with one main single cable
+ - if it broke all computer will dosconnect and not working 
+   - and only one persons can sends data at a time 
 
-  * ring--
-     
-  * star--
+    Advantage---
+      easy to install 
+      cheap
+      less cable required
 
-  * tree--bus and star combination
+    limitations 
+    - hard to troubl shoots 
 
-  * mesh--
+
+
+  * ring--Each computer is coonected in a circle (ring)
+          - data travels in one direction 
+
+          Advantage--
+          - no data collison
+        - equal acess to all devices 
+
+        limitations
+        - one device fails whole network fails 
+        - difficult to add new devices 
+        - hard to troubeshoot
+
+  * star--All devices connected to one central device (router/switch).
+  
+    - example- home wifi network or office network
+
+      - Advantages
+
+          - Easy to manage
+
+          - If one cable fails → only one device affected
+
+          - Fast
+
+   -  Limitations
+
+       -  Central device fails  whole network down
+
+       -  More cable needed
+
+        - Cost higher
+
+  * tree--bus and star combination / hierarchial structure like tree
+
+  - Example
+
+   -  Big office network
+
+    - School network
+
+ -  Advantages
+
+  -   Easy to expand
+
+   -  Good for large networks
+
+   -  Organized structure
+
+  -  Limitations
+
+      - If backbone fails → big problem
+
+     -  Expensive
+
+      - Complex
+
+
+  * mesh--Every device connected to every other device.
+
+    -  Example
+
+          Internet backbone
+
+          Military network
+
+  -  Advantages
+
+      Very reliable
+
+      If one link fails → network still works
+
+      High security
+
+ - Limitations
+
+      Very costly
+
+      Too many cables
+
+      Complex setup
 
 
   ## structure of network
 
-  * OSI model --
-  
-  
-  
+  * OSI model -- OSI model is a 7- layer framework that explains how data travel from one device to another over the network 
 
+  Layer No      	Name
 
+    7         	Application
+    6          	Presentation
+    5         	Session
+    4         	Transport
+    3          	Network
+    2          	Data Link
+    1         	Physical
+  
+  * Application layer--
       
+      - this is the top layer of OSI model 
+      - it is closest to user 
+      - provides network serveice to application
+      - user interact here
+
+      - PROTOCOLS -
+          - HTTP/HTTPS
+          - FTP
+          - SMTP(email)
+          - DNS
+      - Example-
+          - you open chrome -> search google -> then this layer works 
+
+   * Presentation layer-  what it does - -data formatting,encryption &  decryption,compression  (Makes data secure & readable)
+
+      - data formatting - convert data into a standard format so sender and receiver can understand 
+               -  Why needed?
+
+                      - Different systems use different formats → need common format.
+
+                      -  Example
+
+                        Text → ASCII / Unicode
+
+                        Image → JPEG, PNG
+
+                        Audio → MP3
+
+                       - If one system sends “text”, other system must understand same format.
+  
+      - Encryption&decryption- secure data 
+
+      - compression- it reduces the size of file to send faster 
+
+      - PROTOCOLS / EXAMPLE--
+           - SSL/TLS
+           - JPEG,MP3 formats
+      - example-- https website -- data encrypted hota h 
+
+    * SESSION layer --  it manages communication between two devices that means -
+                        - start connection
+                       -  keep connection alive 
+                        - end connection properly
+
+              - start connection-- Before data transfer, session layer creates a connection.
+                              - ex-- you open whatsapp, you login to instagram ,  you connect to website 
+
+              - keep connection alive (session maintenance)-- Keeps session active
+                                                              Syncs communication
+                                                              Handles interruptions
+
+                              - ex- you watching youtube if internet is slow down -> video pause -> then resume 
+
+              - end connection-- closes connection properly 
+                           ex- logout from website , closes app 
     
 
 
