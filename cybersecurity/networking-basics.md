@@ -674,7 +674,7 @@ step9-- browser rendering ( we see the google homepage, html css images all that
            - JPEG,MP3 formats
       - example-- https website -- data encrypted hota h 
 
-    * SESSION layer --  it manages communication between two devices that means -
+    * SESSION layer --  it manages communication between two devices that means -three main functions ---
                         - start connection
                        -  keep connection alive 
                         - end connection properly
@@ -690,7 +690,195 @@ step9-- browser rendering ( we see the google homepage, html css images all that
 
               - end connection-- closes connection properly 
                            ex- logout from website , closes app 
-    
 
 
+    * TRANSPORT LAYER--- it ensures that data is deleivered correcty from sender to receiver.
 
+                    Main Functions ---
+                      1.Segmentation-- it divide(break ) large no of data into small segments or packets .
+                                      - due to this data transfered is fast 
+                      2. Reassemble--- it joins all small segments or packets in Receiver side   
+
+                      3. Error Detection and Recovery--- it will check data receive is correct or not if not then resend like one   
+                                                          packets is missing then it will recover again from resend the data.
+                      4.Flow control--- control data speed betwen sender and receiver
+                                    ex- sender fast and receiver slow == adjust speed data 
+                      5.port adressing -- each application has a port number 
+                                    ex-- http-80
+                                         https-443
+                                         ftp-21
+                       port=  TCP AND UDP --- tcp is ensures data is reched safely on reciver side 
+                                          tcp is conection oriented 
+                                          it have slower speed 
+                                          ex-gmail , google drive 
+
+                                          UDP doesnot care about data is reached at destination or not 
+                                          it is connectionless oriented
+                                          it have hiher speed 
+                                          ex- google meetings , watching youtube video 
+
+      * Network layer --- The Network Layer is responsible for the transmission of data packets from one computer to another across 
+                          different networks using logical addressing and routing.   
+
+                          Main work:
+                            It is responsible for routing (path selection) and logical addressing (IP address)  
+
+                            main functions--
+                               1.logical adressing---Every device gets a unique IP address
+                                                 ex--Example---
+                                                              Your phone → 192.168.x.x (local IP)
+                                                              Websites → public IP
+
+                               2.  Routing(path selection)   ---Finds best path from sender to receiver
+                                                              - it Uses routers      
+                                                    Example---
+                                                         --   You send request to Google → data travels through multiple routers
+                                                         --   Chooses shortest/fastest path   
+                              3. packet forwarding--Moves packet from one router to another
+                                                    Step-by-step delivery   
+
+                              4. fragmentation--Breaks large packets into smaller ones
+                                                Needed when network size limit hota hai  
+
+            -----  Devices used in network layer is 
+                    - Router (MOST IMPORTANT)                                 
+
+
+                        @ important --You break big item into parts → Segments
+                                      Then you put address & route → becomes Packet
+
+                                   -   What is Segment?
+                                               A segment is a piece of data created by the Transport Layer
+                                     - what is packets?         
+                                                A packet is a segment + IP address info, used by Network Layer
+
+                                  | Feature  | Segment             | Packet               |
+                                  | -------- | ------------------- | -------------------- |
+                                  | Layer    | Transport           | Network              |
+                                  | Contains | Port numbers        | IP addresses         |
+                                  | Work     | End-to-end delivery | Routing              |
+                                  | Purpose  | Divide data         | Send across networks |
+
+                          
+      * data link layer--it will add mac address to the packets and called is as a frame and then send it.
+                         Main work:
+                                  -  Provides node-to-node (local) communication within the same network.
+                                   - It ensures data goes from one device to another device in the same LAN
+
+                         main functions--
+                         1️ Framing
+                               What happens?
+                              Takes data from Network Layer (packet)
+                              Converts it into frames
+
+                               Frame = packet + MAC address + error info
+
+                         2️ Physical Addressing (MAC Address)
+                               What is MAC?
+                              Unique hardware address of device
+                              Example: 00:1A:2B:3C:4D:5E     (alphanumeric 12 digit mac)
+
+                               Used for local delivery
+
+                         3️ Error Detection
+                               What happens?
+                              Checks if data is correct
+                              Uses methods like CRC
+
+                               If error -> data rejected
+
+                         4️ Flow Control
+                               What happens?
+
+                             - Controls speed between sender & receiver
+                              - Prevents data overload
+
+                         5️ Access Control
+                               What happens?
+
+                             - Decides who can use network at a time
+                              - Prevents collision
+
+                              -- Devices used
+                                    Switch (MOST IMPORTANT)
+                                   Bridge
+
+
+      * physical layer --
+                         Main work:
+                           - It is responsible for actual transmission of raw bits (0s and 1s) through physical medium.
+
+                           - This is the hardware level of networking    
+
+                main functions---
+                             1️ Bit Transmission
+                                   What happens?
+                                  Converts data into binary bits (0 and 1)
+                                  Sends it as signals
+
+                                   signals can be:
+
+                                  Electrical (copper cable)
+                                  Light (fiber optic)
+                                  Radio (Wi-Fi)
+                                  
+                                 -- Data ko 0 aur 1 me convert karke signal ke form me bhejta hai
+
+                             2️ Physical Media
+                                   What it includes?
+                                  Cables
+                                  Connectors
+                                  Wireless signals
+
+                              --  Examples
+                                    Ethernet cable
+                                    Fiber optic cable
+                                    Wi-Fi signals
+
+                                 -- Actual wire aur medium jisse data travel karta hai
+
+                             3️ Signal Encoding
+                                   What happens?
+                                  Converts bits into signals
+                                  Defines voltage/light levels
+
+                                   Example:
+                                      1 = high voltage
+                                      0 = low voltage
+
+                             4️ Data Rate (Speed)
+                                   What happens?
+                                  Defines how fast bits are transmitted
+
+                                   Example:
+                                      100 Mbps
+                                      1 Gbps
+
+                             5️ Synchronization
+                                   What happens?
+                                  Keeps sender & receiver in sync
+
+                                   So bits are correctly received
+
+                                    Devices used
+                                    Cables
+                                    Hubs
+                                    Repeaters
+
+                               ---    Real-life Example
+
+                                   Sending file via LAN cable:
+
+                                        Data comes from upper layers
+                                        Converted into bits
+                                        Sent through cable as electrical signals
+                                        Receiver gets signals → converts back                  
+
+
+                ()important---
+                             Transport → Segment
+                             Network → Packet
+                             Data Link → Frame
+                             Physical → Bits
+
+                             
