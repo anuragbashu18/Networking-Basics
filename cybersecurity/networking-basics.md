@@ -695,9 +695,9 @@ step9-- browser rendering ( we see the google homepage, html css images all that
     * TRANSPORT LAYER--- it ensures that data is deleivered correcty from sender to receiver.
 
                     Main Functions ---
-                      1.Segmentation-- it divide(break ) large no of data into small segments or packets .
+                      1.Segmentation-- it divide(break ) large no of data into small segments .
                                       - due to this data transfered is fast 
-                      2. Reassemble--- it joins all small segments or packets in Receiver side   
+                      2. Reassemble--- it joins all small segments  in Receiver side   
 
                       3. Error Detection and Recovery--- it will check data receive is correct or not if not then resend like one   
                                                           packets is missing then it will recover again from resend the data.
@@ -881,4 +881,12 @@ step9-- browser rendering ( we see the google homepage, html css images all that
                              Data Link → Frame
                              Physical → Bits
 
-                             
+                          | Layer        | Protocols      |
+                          | ------------ | -------------- |
+                          | Application  | HTTP, FTP, DNS |
+                          | Presentation | SSL/TLS, JPEG  |
+                          | Session      | NetBIOS, RPC   |
+                          | Transport    | TCP, UDP       |
+                          | Network      | IP, ICMP       |
+                          | Data Link    | Ethernet, PPP  |
+                          | Physical     | Wi-Fi, USB     |
