@@ -639,13 +639,14 @@ step9-- browser rendering ( we see the google homepage, html css images all that
       - it is closest to user 
       - provides network serveice to application
       - user interact here
+      - where is it --- in devices 
 
       - PROTOCOLS -
           - HTTP/HTTPS
           - FTP
           - SMTP(email)
           - DNS
-      - Example-
+      - Example-  like whatsapp , browser -- where user intracts to send data .
           - you open chrome -> search google -> then this layer works 
 
    * Presentation layer-  what it does - -data formatting,encryption &  decryption,compression  (Makes data secure & readable)
@@ -890,3 +891,76 @@ step9-- browser rendering ( we see the google homepage, html css images all that
                           | Network      | IP, ICMP       |
                           | Data Link    | Ethernet, PPP  |
                           | Physical     | Wi-Fi, USB     |
+
+          @     User → Secure → Connect → Deliver → Route → Local → Bits
+
+          @      User se data nikalta hai → secure hota hai → connection banta hai → deliver hota hai → route milta hai → local network  
+                 me jata hai → bits ban ke travel karta hai
+
+      * client server architecture
+        -- it is a network model where client request services and server response services back to client 
+        - advanatge-- 
+                   - centralised control
+                   - easy management
+                   - secure data storage
+        - limitations-
+                   - central server fails-> whole system will fails
+                   - expensive
+                   - high traffic issues -> like you take a example of university when result is declared then many students can request 
+                     services so server will go down 
+        - cybersecurity risks-
+                   - main target is server for attcker
+                   - attacks like: DDoS,SQL injection,brute force
+                   # here SOC Analyst will monitor server traffic 
+        - two components --
+              1. client-- user side devices, request services
+                         ex-mobile , laptop,computers, browsers  
+                         -  like you open google
+
+              2. server-- powerful system 
+                          processes request 
+                          and then respond
+                        ex-- web server , database server
+                          -  google server sends google webpage
+
+                -> working --
+                              Client sends request (ex- open website)
+                              Server receives request
+                              Server processes it
+                              Server sends response
+                              Client shows result
+
+                example-- 1. open website----google 
+                          2. open whatsapp /instagram----
+                          3. online bank balnce check --- user requst balnace check throuh app , bank server respnds with balance
+                          4.youtube-- you request video server responds with dedicated videos 
+
+
+        * peer to peer architecture
+           --- p2p is network moodel where all devices acts as a client and server both and share resources directly with each other.
+              - all devices are equal (peers)
+              - each device can send data and receive data 
+              - there is not dedicated central server like client server archiecture  
+
+            example- 1. uTorrent,BitTorrent
+                    -- when you download torrent - many users share file -> you download from multiple users
+                     2. file sharing in same network 
+                       -- like you share file from your laptop to frind laptop through shareit / nearbyshare
+                     3. in whatsapp i share file in groups so everybody will acess those file so many exmaple 
+                     4. videocall ......... 
+              - advantage -
+                         - no need of central server
+                         - easy setup 
+                         - low cost 
+                         - fast sharing (multiple resources)
+              - limitations -
+                         - less security
+                         - no central control
+                         - data can be unsafe
+                         - hard to manage
+              - cybersecurity risks-
+                         - malware spread 
+                         - pirated content
+                         - no proper authentication
+
+        
