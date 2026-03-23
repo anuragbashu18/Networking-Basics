@@ -963,4 +963,108 @@ step9-- browser rendering ( we see the google homepage, html css images all that
                          - pirated content
                          - no proper authentication
 
-        
+        # REPEATER--
+                  - it is a physical layer netwoking device that boost or regenerates the weak signal and make it strong.
+                  working- whenever signal is weak then using repeater it will make it signal strong for long distnace communication
+
+                  example- wifi extender at home
+                  limitations- no security, no filtering
+
+        # HUB-
+              - a devices that connects multiple computer in a network
+              Work--
+                 - Hub sends data to all devices, whether anyone needs it or not.
+                 - No intelligence (dumb device)
+              types -- 
+                   1. Active hub-- it amplify the signal
+                   2.passive hub- it will forward the signal 
+                   3.intelligent hub-- basic mangement features
+              limitations--
+                     - data collision
+                     - slow
+                     - no security
+
+        # BRIDGE-
+                 - it connect TWO LAN networks and filter data.
+               - working-
+                      - it will uses MAC address to send data to correct destination devices not to all devices.
+               - types of bridge-- 
+                      1. transparent bridge -- automatically learns MAC address
+                      2. source rounting bridge- it will decide path 
+                      3.translation bridge-- it will connects different networks.
+                -Advantage--
+                       - less traffic 
+                       - better performence than hub.
+                - limitations--
+                       - slow compared to switch 
+                       - limited scability
+
+        # switch-  ( smart HUB)
+                 - advanced version of hub/bridge
+                - working-
+                        - uses MAC adress 
+                        - sends data to corect device
+                        - maintain MAC table
+               - example-- office lan,computer lab
+
+                - advantage-
+                          - no unnecessary traffic
+                          - fast 
+                          - less collision
+
+        # router-
+                 -  connects different networks
+                 - A router is a networking device that takes internet from the modem and distributes it to multiple devices like phones, laptops, and computers.
+
+              - Work--
+                   - Uses IP address
+                   - Finds best route
+                   - Sends data between networks
+              - example- home wifi router
+
+       # Gateway-
+               - it will connects different types of networks (protocols)
+               working-
+                       - converts protocol
+                       - acts as a entry/exit point
+              - example- internet gateway, email server
+
+       # Brouter-
+               - it is a combination of bridge and router.
+               - work--
+                   - Same network → acts like bridge (MAC)
+                   - Different network → acts like router (IP)
+                                  ->>> here one question why not gateway because gateway is also connect differnet network 
+
+                             ------ Because:
+                                          Router connects different networks using SAME protocol (IP)
+                                          Gateway connects different networks using DIFFERENT protocols
+                  
+                ---    Simple Example---
+                                 Same protocol (Router case)
+                                    Network A → uses IP
+                                    Network B → uses IP
+
+                                 Same language → Router enough
+
+                                 Different protocol (Gateway case)
+                                    Network A → uses IP
+                                    Network B → uses some other protocol (non-IP / different format)
+
+                                 Language different → translation needed → Gateway
+
+                -- Recall in Table--
+
+                           | Device       | Layer (OSI)         | Connects                     | Address Used | Main Work                | Intelligence |
+                          | ------------ | ------------------- | ---------------------------- | ------------ | ------------------------ | ------------ |
+                          | **Repeater** | Physical (1)        | Same network                 | ❌ None       | Signal boost             | ❌ No         |
+                          | **Hub**      | Physical (1)        | Same network                 | ❌ None       | Broadcast data           | ❌ No         |
+                          | **Bridge**   | Data Link (2)       | Same network (LAN segments)  | MAC          | Filters data             | ✅ Low        |
+                          | **Switch**   | Data Link (2)       | Same network (LAN)           | MAC          | Sends to correct device  | ✅ High       |
+                          | **Router**   | Network (3)         | Different networks           | IP           | Routing (path selection) | ✅ High       |
+                          | **Gateway**  | All layers          | Different protocols/networks | Any          | Protocol conversion      | ✅ Very High  |
+                          | **Brouter**  | Data Link + Network | Both                         | MAC + IP     | Bridge + Router          | ✅ Medium     |
+
+                        * later we learn all about conversion of protocol like -
+                                                                IPV4 --> IPV6
+                                                                and many more .......
