@@ -210,14 +210,15 @@ Online gaming
  
 
  ## HTTP (hypertext transfer protocol)
-
+  
+  * it is a stateless protocol 
   * it uses a port number- 80( default port)
   * it is not encrypted
   * data send as plain text
   * attack is mostly possible (like MITM ATTACK)
   * it is rarely used in modern tachnology 
 
-   http is a protocol using this data is transfer between client(browser) and web server 
+   http is a protocol using this, data is transfer between client(browser) and web server 
 
    if i open a website eg- google.com , in which http/*https* send a request to web server and then server response back with the data 
    
