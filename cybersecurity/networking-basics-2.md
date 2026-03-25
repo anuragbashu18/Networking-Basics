@@ -39,4 +39,13 @@
                             - or simple defination-- 
                                     - cookies from another websites that track you 
 
-          
+        * how email works?-- elctronic mail is used to exchange message over the internet.
+                   - SMTP (Simple mail transffer protocol) - it is used to sending email from client to mail server.
+                         -- port:25
+                   - POP3 (post office protocol version 3) - it is used to receive emails by downloading them from mail server to local 
+                                                             devices
+                         -- port: 110
+                   - IMAP (internet message acess protocol) - it is a protocol used to access and manage emails directly on the mail 
+                                                              server without downloading them 
+                         -- port:143
+                
